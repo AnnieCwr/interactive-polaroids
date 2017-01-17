@@ -52,21 +52,21 @@ body {
 
 .polaroid:nth-child(1) {
   transform: rotate(-13deg);
-  left: 11rem;
-  bottom: -17rem;
+  left: 12rem;
+  bottom: -16rem;
 }
 
 .polaroid:nth-child(2) {
   transform: rotate(6deg);
   z-index: 3;
-  bottom: -20rem;
-  left: 17rem;
+  bottom: -19rem;
+  left: 18rem;
 }
 
 .polaroid:nth-child(3) {
   transform: rotate(30deg);
-  bottom: -17rem;
-  left: 23rem;
+  bottom: -16rem;
+  left: 24rem;
 }
 
 .polaroid:hover {
