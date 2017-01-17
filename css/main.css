@@ -1,3 +1,21 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	box-sizing: border-box;
+
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
 html {
   background-color: #e2e2e2;
 
@@ -12,6 +30,10 @@ html {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
+  position: relative;
+  position: absolute;
+  bottom: -28rem;
+  left: 32rem;
 }
 
 .polaroid > img {
@@ -22,4 +44,51 @@ html {
 .polaroid > figcaption {
   color: #fff;
   text-shadow: 1px 1px 3px #000;
+  position: absolute;
+  bottom: 1rem;
+  left: 5rem;
+}
+
+body {
+  position: relative;
+}
+
+.polaroid:nth-child(1) {
+  transform: rotate(-20deg);
+  transition: 200ms;
+  left: 26rem;
+  bottom: -26rem;
+}
+
+.polaroid:nth-child(2) {
+  transform: rotate(10deg);
+  transition: 200ms;
+  z-index: 3;
+}
+
+.polaroid:nth-child(3) {
+  transform: rotate(20deg);
+  transition: 200ms;
+  bottom: -25rem;
+  left:37rem;
+}
+
+.polaroid:nth-child(1):hover {
+  transform: rotate(0deg);
+  z-index: 4;
+  left: 26rem;
+  bottom: -26rem;
+  box-shadow: 1px 4px 11px #000;
+}
+
+.polaroid:nth-child(2):hover {
+  transform: rotate(0deg);
+  z-index: 4;
+  box-shadow: 1px 4px 11px #000;
+}
+
+.polaroid:nth-child(3):hover {
+  transform: rotate(0deg);
+  z-index: 4;
+  box-shadow: 1px 4px 11px #000;
 }
