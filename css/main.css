@@ -5,32 +5,29 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-}
-
-*, *::before, *::after {
-	box-sizing: inherit;
-}
-html {
   background-color: #e2e2e2;
 
   font-family: sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 .polaroid {
   margin: 0;
   padding: 10px;
   width: 250px;
-
+  transition: 200ms;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
-  position: relative;
   position: absolute;
   bottom: -28rem;
   left: 32rem;
@@ -54,40 +51,25 @@ body {
 }
 
 .polaroid:nth-child(1) {
-  transform: rotate(-20deg);
-  transition: 200ms;
-  left: 26rem;
-  bottom: -26rem;
+  transform: rotate(-13deg);
+  left: 11rem;
+  bottom: -17rem;
 }
 
 .polaroid:nth-child(2) {
-  transform: rotate(10deg);
-  transition: 200ms;
+  transform: rotate(6deg);
   z-index: 3;
+  bottom: -20rem;
+  left: 17rem;
 }
 
 .polaroid:nth-child(3) {
-  transform: rotate(20deg);
-  transition: 200ms;
-  bottom: -25rem;
-  left:37rem;
+  transform: rotate(30deg);
+  bottom: -17rem;
+  left: 23rem;
 }
 
-.polaroid:nth-child(1):hover {
-  transform: rotate(0deg);
-  z-index: 4;
-  left: 26rem;
-  bottom: -26rem;
-  box-shadow: 1px 4px 11px #000;
-}
-
-.polaroid:nth-child(2):hover {
-  transform: rotate(0deg);
-  z-index: 4;
-  box-shadow: 1px 4px 11px #000;
-}
-
-.polaroid:nth-child(3):hover {
+.polaroid:hover {
   transform: rotate(0deg);
   z-index: 4;
   box-shadow: 1px 4px 11px #000;
